@@ -1,0 +1,34 @@
+#nameCard{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 300%;
+    width: 100%;
+    margin-left: 50px;
+}
+#nameCard h6{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    padding-top: 100px;
+    margin-bottom: -50px;
+}
+
+.externalLinks{
+    width: 90%;
+    text-align: center;
+    padding-top: 1%;
+    margin: auto;
+}
+
+.links{
+    padding: 3%;
+    width: 80%;
+    display: inline-block;
+    margin: auto;
+
+}
+
+.extLinks{
+    display: inline-block;
+    position: relative;
+    margin: 0 5%;
+    transition: opacity 0.5s ease;
+}
