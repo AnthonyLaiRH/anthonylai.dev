@@ -1,21 +1,35 @@
+.container{
+    width: 300px;
+    background-color: #ffcc33;
+    margin: auto; 
+}
+
 #nameCard{
     font-family: 'Work Sans', sans-serif;
     font-size: 300%;
-    width: 100%;
+    width: 500px;
+    float: left;
+    height: 210px;
     margin-left: 50px;
+    background-color: #ffcc33;
 }
 #nameCard h6{
     font-family: 'Oxygen', sans-serif;
     font-size: 30px;
     padding-top: 100px;
     margin-bottom: -50px;
+    
 }
 
-.externalLinks{
-    width: 90%;
+#externalLinks{
+    width: 30%;
+    float: left;
     text-align: center;
-    padding-top: 1%;
-    margin: auto;
+    padding-top: 200px
+}
+
+#clear{
+    clear: both;
 }
 
 .links{
@@ -26,9 +40,11 @@
 
 }
 
-.extLinks{
+.linkIcons{
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
-    position: relative;
-    margin: 0 5%;
-    transition: opacity 0.5s ease;
 }
+
+
