@@ -25,7 +25,7 @@
     width: 30%;
     float: left;
     text-align: center;
-    padding-top: 200px
+    padding-top: 175px
 }
 
 #clear{
@@ -41,10 +41,14 @@
 }
 
 .linkIcons{
-    border-radius: 10px;
     width: 60px;
     height: 60px;
     display: inline-block;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 
