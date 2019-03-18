@@ -12,12 +12,20 @@
     font-family: 'Oxygen', sans-serif;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 div {
     outline: 1px solid red;
 }
 
 body {
     background-color: whitesmoke;
+}
+
+a {
+    outline: 0;
 }
 
 .home {
@@ -73,7 +81,7 @@ body {
     text-align: center;
     text-decoration: none;
     border: none;
-    /*rounded corners*/border-radius: 0px;
+    /*rounded*/border-radius: 2px;
     width: 70%;
     padding: 10px 10px;
     margin: 10px;
@@ -94,12 +102,18 @@ body {
     margin: auto;
 }
 
+.extLink {
+    border-radius: 2px;
+    background-color: transparent;
+}
+
 .extLink:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
     background-color: #ffcc33
 }
 
 .linkIcons{
+    background-color: transparent;
     width: 60px;
     height: 60px;
     display: inline-block;
@@ -119,4 +133,33 @@ body {
     margin-left: 50px;
 }
 
+.tooltiptext{
+    
+    visibility: visible;
+    position: absolute;
+    font-family: 'Montserrat';
+    width: 110px;
+    background-color: #323232;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 25px;
+    margin-left: -55px;
+    
+    opacity: 0;
+    bottom: 105%;
+    transition: opacity 0.3s ease, bottom 0.25s ease-in-out;
+    
+}
 
+.tooltiptext::after{
+    
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #323232 transparent transparent transparent;
+}
