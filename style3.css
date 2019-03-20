@@ -3,7 +3,6 @@
     width: 100%;
 }
 
-
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -47,7 +46,7 @@
     display: grid;
     grid-gap: 5px 5px;
 }
-/*
+
 .grid-container > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
@@ -55,7 +54,7 @@
     padding: 1em;
     color: #d9480f;
     color: black;
-}*/
+}
 
 .grid-container > #nameCard {
     border: 2px solid #ffcc33;
@@ -67,6 +66,7 @@
 
 
 .spacer {
+    background: transparent;
     display: grid;
     grid-gap: 5px 5px;
     grid-template-columns: 100%;
@@ -122,6 +122,12 @@ img {
     padding: 10% ;
 }
 
+.linkIcons:hover {
+    border-radius: 10px;
+    background-color: #ffcc33;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .pgShortcut {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -130,7 +136,7 @@ img {
     text-align: center;
     text-decoration: none;
     border: none;
-    /*rounded*/border-radius: 2px;
+    /*rounded*/border-radius: 4px;
     width: 70%;
     padding: 10px 10px;
     margin: 10px;
@@ -141,7 +147,7 @@ img {
     background-color: rgb(10, 158, 216); /* Green */
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
- }
+}
 
 #home {
     grid-template-columns: repeat(15, 1fr);
@@ -158,7 +164,6 @@ img {
     float: left;
     height: 195px;
     margin-left: 0px;
-    background-color: #ffcc33;
 }
 
 #shortcuts {
@@ -180,4 +185,34 @@ img {
 #nameCard p{
     font-size: 14pt;
     padding-left: 50px;
+}
+
+
+
+
+#aboutMe {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: auto auto auto auto;
+}
+
+#aboutMe .spacer {
+    grid-column: 1/16;
+    grid-row: 1/2;
+}
+
+#aboutMe #spacer {
+    grid-column: 1/16;
+    grid-row: 4/5;
+}
+
+#aboutMe h1 {
+    /*start on row 2 column 1, and span 1 row and 3 columns*/
+    grid-area: 2 / 7/ span 1 / span 3;
+    font-size: 30pt;
+}
+
+#aboutMe #dp {
+    grid-area: 3 / 1 / span 1 / span 5;
+    margin: 0px 0px 0px 10%;
+    border-radius: 50%;
 }
