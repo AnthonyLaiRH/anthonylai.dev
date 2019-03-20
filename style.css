@@ -1,76 +1,131 @@
-/*
-    font-family: 'Raleway', sans-serif;
-
-    font-family: 'Ubuntu', sans-serif;
-
-    font-family: 'PT Sans Narrow', sans-serif;
-
-    font-family: 'Signika', sans-serif;
-
-    font-family: 'Work Sans', sans-serif;
-
-    font-family: 'Oxygen', sans-serif;
-*/
-
-* {
-    box-sizing: border-box;
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
 }
 
-/*div {
-    outline: 1px solid red;
-}*/
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    border: 0px solid red;
+}
+
+/***CONTAINER***/
+.grid-container {
+    display: grid;
+    grid-gap: 5px 5px;
+}
+
+.grid-container > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+    color: black;
+}
+
+.grid-container > #nameCard {
+    border: 2px solid #ffcc33;
+    border-radius: 5px;
+    background-color: #ffcc33;
+    padding: 1em;
+    color: black;
+}
+
+
+.spacer {
+    background: transparent;
+    display: grid;
+    grid-gap: 5px 5px;
+    grid-template-columns: 100%;
+    grid-auto-rows: 100px;
+    /*padding vars go NESW or top right bottom left*/
+    padding: 50px 0px 50px 0px;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+
+}
 
 body {
     background-color: whitesmoke;
+    margin: 0 auto;
+    min-width: 790px;
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    html {
+      font-size: 100%;
+    }
+}
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 50%;
+    }
 }
 
 a {
     outline: 0;
 }
 
-.home {
-    width: 100%;
-    height: 90%;
-    padding-bottom: 50%;
+img {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#nameCard{
-    font-family: 'Raleway', sans-serif;
-    font-size: 300%;
-    width: 55%;
-    float: left;
-    height: 210px;
-    margin-left: 50px;
+.linkIcons{
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    padding: 10% ;
+}
+
+.linkIcons:hover {
+    border-radius: 10px;
     background-color: #ffcc33;
-}
-#nameCard h6{
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    padding-top: 100px;
-    margin-bottom: -50px;
-}
-
-#nameCard p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    padding-left: 50px;
-}
-
-#shortcuts {
-    width: 25%;
-    float: left;
-    text-align: right;
-    padding-top: 200px;
-    padding-left: 20px;
-    padding-right: 30px;
-    margin: auto;
-}
-
-#externalLinks{
-    width: 10%;
-    float: left;
-    padding-top: 100px;
-    padding-left: 15px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .pgShortcut {
@@ -81,7 +136,7 @@ a {
     text-align: center;
     text-decoration: none;
     border: none;
-    /*rounded*/border-radius: 2px;
+    /*rounded*/border-radius: 4px;
     width: 70%;
     padding: 10px 10px;
     margin: 10px;
@@ -92,73 +147,72 @@ a {
     background-color: rgb(10, 158, 216); /* Green */
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
- }
-
-.links {
-    padding: 3%;
-    width: 30%;
-    display: inline-block;
-    margin: auto;
 }
 
-.extLink {
-    border-radius: 2px;
-    background-color: transparent;
+#home {
+    grid-template-columns: repeat(15, 1fr);
+    grid-auto-rows: auto;
 }
 
-.extLink:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
-    background-color: #ffcc33
-}
 
-.linkIcons{
-    background-color: transparent;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
+#nameCard {
+    /*Three ways to do the same thing*/
+    grid-column-start: 1;
+    grid-column-end: 10;
 
-.infoHeader {
-    font-family: 'Raleway', sans-serif;
-    font-size: 350%;
-    width: 50%;
+    font-size: 26pt;
     float: left;
-    height: 210px;
-    margin-left: 50px;
+    height: 195px;
+    margin-left: 0px;
 }
 
-.tooltiptext{
-    
-    visibility: visible;
-    position: absolute;
-    font-family: 'Montserrat';
-    width: 110px;
-    background-color: #323232;
-    color: whitesmoke;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 25px;
-    margin-left: -55px;
-    
-    opacity: 0;
-    bottom: 105%;
-    transition: opacity 0.3s ease, bottom 0.25s ease-in-out;
-    
+#shortcuts {
+    grid-column: 10 / span 4;
+
+    padding: 10% 0% 10% 25%;
 }
 
-.tooltiptext::after{
-    
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #323232 transparent transparent transparent;
+#links {
+    grid-column: 14/16;
+
+    padding: 5px 0 5px 5%;
+}
+
+#nameCard h6 {
+    font-size: 16pt;
+    margin-bottom: -40px;
+}
+#nameCard p{
+    font-size: 14pt;
+    padding-left: 50px;
+}
+
+
+
+
+#aboutMe {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: auto auto auto auto;
+}
+
+#aboutMe .spacer {
+    grid-column: 1/16;
+    grid-row: 1/2;
+}
+
+#aboutMe #spacer {
+    grid-column: 1/16;
+    grid-row: 4/5;
+}
+
+#aboutMe h1 {
+    /*start on row 2 column 1, and span 1 row and 3 columns*/
+    grid-area: 2 / 7/ span 1 / span 3;
+    font-size: 30pt;
+}
+
+#aboutMe #dp {
+    grid-area: 3 / 1 / span 1 / span 5;
+    margin: 0px 0px 0px 10%;
+    border-radius: 50%;
 }
