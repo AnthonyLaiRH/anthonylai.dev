@@ -219,6 +219,6 @@ img {
 
 #aboutMe p {
     grid-area: 3 / 7 / span 1 / span 8;
-    font-size: 15pt;
+    font-size: 14pt;
     padding: 0 0 0 5%;
 }
