@@ -216,3 +216,9 @@ img {
     margin: 0px 0px 0px 10%;
     border-radius: 50%;
 }
+
+#aboutMe p {
+    grid-area: 3 / 7 / span 1 / span 8;
+    font-size: 15pt;
+    padding: 0 0 0 5%;
+}
