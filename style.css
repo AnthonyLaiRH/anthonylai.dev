@@ -65,7 +65,16 @@
 }
 
 
-.spacer {
+.topSpacer {
+    background: transparent;
+    display: grid;
+    grid-gap: 5px 5px;
+    grid-template-columns: 100%;
+    grid-auto-rows: 100px;
+    /*padding vars go NESW or top right bottom left*/
+    padding: 50px 0px 50px 0px;
+}
+.botSpacer {
     background: transparent;
     display: grid;
     grid-gap: 5px 5px;
@@ -189,13 +198,13 @@ img {
 
 
 
-
+/**ABOUT ME **/
 #aboutMe {
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: auto auto auto auto;
 }
 
-#aboutMe .spacer {
+#aboutMe .topSpacer {
     grid-column: 1/16;
     grid-row: 1/2;
 }
@@ -221,4 +230,13 @@ img {
     grid-area: 3 / 7 / span 1 / span 8;
     font-size: 14pt;
     padding: 0 0 0 5%;
+}
+
+
+
+
+/**WORK EXPERIENCE**/
+#workExp {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: auto auto auto auto auto;
 }
