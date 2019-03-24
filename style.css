@@ -73,6 +73,8 @@
     grid-auto-rows: 100px;
     /*padding vars go NESW or top right bottom left*/
     padding: 50px 0px 50px 0px;
+    grid-column: 1/16;
+    grid-row: 1/2;
 }
 .botSpacer {
     background: transparent;
@@ -204,12 +206,7 @@ img {
     grid-template-rows: auto auto auto auto;
 }
 
-#aboutMe .topSpacer {
-    grid-column: 1/16;
-    grid-row: 1/2;
-}
-
-#aboutMe #spacer {
+#aboutMe .botSpacer {
     grid-column: 1/16;
     grid-row: 4/5;
 }
@@ -239,4 +236,29 @@ img {
 #workExp {
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: auto auto auto auto auto;
+}
+#workExp #workExpTitle {
+    grid-area: 2 / 1 / span 1 / span 15;
+}
+    #windRiver {
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: auto auto auto ;
+        grid-area: 3 / 1 / span 2 / span 15;
+    }
+
+    #wrIcon{
+        grid-area: 1 / 1 / span 3 / span 4;
+    }
+
+    #windRiver h3 {
+        grid-area: 1 / 6 / span 1 / span 7;
+    }
+
+    #windRiver p {
+        grid-area: 2 / 7 / span 2 / span 6;
+    }
+
+#workExp .botSpacer {
+    grid-column: 1/16;
+    grid-row: 5/6;
 }
