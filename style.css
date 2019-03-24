@@ -241,9 +241,10 @@ img {
     grid-area: 2 / 1 / span 1 / span 15;
 }
     #windRiver {
+        grid-area: 3 / 1 / span 2 / span 15;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto ;
-        grid-area: 3 / 1 / span 2 / span 15;
+        
     }
 
     #wrIcon{
