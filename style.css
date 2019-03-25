@@ -235,7 +235,7 @@ img {
 /**WORK EXPERIENCE**/
 #workExp {
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
 }
 #workExp #workExpTitle {
     grid-area: 2 / 1 / span 1 / span 15;
@@ -243,8 +243,7 @@ img {
     #windRiver {
         grid-area: 3 / 1 / span 2 / span 15;
         grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: auto auto auto ;
-        
+        grid-template-rows: auto auto auto ; 
     }
 
     #wrIcon{
@@ -256,10 +255,23 @@ img {
     }
 
     #windRiver p {
-        grid-area: 2 / 7 / span 2 / span 6;
+        grid-area: 2 / 7 / span 2 / span 8;
+    }
+
+
+    #cra {
+        grid-area: 5 / 1 / span 2 / span 15;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: auto auto auto ; 
+    }
+    #craIcon {
+        grid-area: 1 / 11 / span 3 / span 4;
+    }
+    #cra h3 {
+        grid-area: 1 / 2 / span 1 / span 9;
     }
 
 #workExp .botSpacer {
     grid-column: 1/16;
-    grid-row: 5/6;
+    grid-row: 7/8;
 }
