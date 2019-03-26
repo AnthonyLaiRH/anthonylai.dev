@@ -270,6 +270,9 @@ img {
     #cra h3 {
         grid-area: 1 / 2 / span 1 / span 9;
     }
+    #cra p {
+        grid-area: 2 / 3 / span 2 / span 8;
+    }
 
 #workExp .botSpacer {
     grid-column: 1/16;
