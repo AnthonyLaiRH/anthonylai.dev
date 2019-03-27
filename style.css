@@ -241,7 +241,7 @@ img {
     grid-area: 2 / 1 / span 1 / span 15;
 }
     #windRiver {
-        grid-area: 3 / 1 / span 2 / span 15;
+        grid-area: 3 / 1 / span 2 / span 14;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto ; 
     }
@@ -260,12 +260,12 @@ img {
 
 
     #cra {
-        grid-area: 5 / 1 / span 2 / span 15;
+        grid-area: 5 / 1 / span 2 / span 14;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto ; 
     }
     #craIcon {
-        grid-area: 1 / 11 / span 3 / span 4;
+        grid-area: 1 / 12 / span 3 / span 4;
     }
     #cra h3 {
         grid-area: 1 / 2 / span 1 / span 9;
