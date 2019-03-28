@@ -64,7 +64,7 @@
     color: black;
 }
 
-
+/*SPACERS*/
 .topSpacer {
     background: transparent;
     display: grid;
@@ -86,15 +86,25 @@
     padding: 50px 0px 50px 0px;
 }
 
+
+/*GENERAL COMPONENTS*/
 html {
     font-family: "Raleway", sans-serif;
 
 }
-
 body {
     background-color: whitesmoke;
     margin: 0 auto;
     min-width: 790px;
+}
+a {
+    outline: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
@@ -111,17 +121,8 @@ body {
     }
 }
 
-a {
-    outline: 0;
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
+/*ICONS*/
 .linkIcons{
     background-color: transparent;
     position: relative;
@@ -159,6 +160,8 @@ img {
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
 
 #home {
     grid-template-columns: repeat(15, 1fr);
