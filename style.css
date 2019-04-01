@@ -298,6 +298,9 @@ img {
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto ;
     }
+    #kinectGame #kinectGameImg {
+        grid-area: 1 / 5 / span 3 / span 6;
+    }
 
 
     #gameBot {
