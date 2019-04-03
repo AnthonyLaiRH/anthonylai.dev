@@ -298,7 +298,7 @@ img {
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto 200px 200px;
         background-image: url("icons/kinectgame.PNG") ;
-        background-size: contain;
+        background-size: cover;
     }
     #kinectGame h3 {
         grid-area: 1 / 1 / span 1 / span 6;
@@ -315,4 +315,10 @@ img {
         grid-area: 5 / 2 / span 2 / span 13;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto auto auto ;
+    }
+    #gameBot h3 {
+        grid-area: 1 / 1 / span 1 / span 6;
+    }
+    #gameBot p {
+        grid-area: 2 / 2 / span 2 / span 6;
     }
