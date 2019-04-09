@@ -305,7 +305,9 @@ img {
         background-size: cover;
     }
     #kinectGame h3 {
-        grid-area: 1 / 1 / span 1 / span 6;
+        font-size: 30px;
+        outline-color: black;
+        grid-area: 1 / 8 / span 1 / span 9;
     }
     #kinectGame p {
         grid-area: 2 / 2 / span 2 / span 6;
