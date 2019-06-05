@@ -1,0 +1,12 @@
+.section{
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+.description{
+    font-size: 120%;
+}
+
+.section.intro{
+    text-align: left;
+}
