@@ -31,7 +31,7 @@
     width: 60px;
     height: 60px;
 }
-.fa{
-    width: 150%;
-    height: 150%;
+
+.one-half.column{
+    width: 40%;
 }
