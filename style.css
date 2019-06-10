@@ -1,330 +1,37 @@
-/* For mobile phones: */
-[class*="col-"] {
+.section{
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+.description{
+    font-size: 120%;
+}
+
+.section.intro{
+    text-align: left;
+}
+
+.aboutMe{
+    text-align: left;
+    font-size: 120%;
+}
+
+#links{
+    text-align: center;
+}
+
+.profile-pic{
+    margin: 30px 0px 100px 110px;
+    border-radius: 150px;
     width: 100%;
+    height: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 0px;
-    border: 0px solid red;
-}
-
-/***CONTAINER***/
-.grid-container {
-    display: grid;
-    grid-gap: 5px 5px;
-}
-
-.grid-container > div {
-    border: 2px solid #ffa94d;
-    border-radius: 5px;
-    background-color: #ffd8a8;
-    padding: 1em;
-    color: #d9480f;
-    color: black;
-}
-
-.grid-container > #nameCard {
-    border: 2px solid #ffcc33;
-    border-radius: 5px;
-    background-color: #ffcc33;
-    padding: 1em;
-    color: black;
-}
-
-/*SPACERS*/
-.topSpacer {
-    background: transparent;
-    display: grid;
-    grid-gap: 5px 5px;
-    grid-template-columns: 100%;
-    grid-auto-rows: 100px;
-    /*padding vars go NESW or top right bottom left*/
-    padding: 50px 0px 50px 0px;
-    grid-column: 1/16;
-    grid-row: 1/2;
-}
-.botSpacer {
-    background: transparent;
-    display: grid;
-    grid-gap: 5px 5px;
-    grid-template-columns: 100%;
-    grid-auto-rows: 100px;
-    /*padding vars go NESW or top right bottom left*/
-    padding: 50px 0px 50px 0px;
-}
-
-
-/*GENERAL COMPONENTS*/
-html {
-    font-family: "Raleway", sans-serif;
-
-}
-body {
-    background-color: whitesmoke;
-    margin: 0 auto;
-    min-width: 790px;
-}
-a {
-    outline: 0;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 601px) {
-    html {
-      font-size: 100%;
-    }
-}
-  
-  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
-    html {
-      font-size: 50%;
-    }
-}
-
-
-/*ICONS*/
-.linkIcons{
-    background-color: transparent;
-    position: relative;
-    cursor: pointer;
+#links img{
     width: 60px;
     height: 60px;
-    display: block;
-    text-align: center;
-    padding: 10% ;
 }
 
-.linkIcons:hover {
-    border-radius: 10px;
-    background-color: #ffcc33;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.one-half.column{
+    width: 40%;
 }
-
-.pgShortcut {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    /*rounded*/border-radius: 4px;
-    width: 70%;
-    padding: 10px 10px;
-    margin: 10px;
-    color: black;
-    background-color:#ffcc33;
-}
-.pgShortcut:hover {
-    background-color: rgb(10, 158, 216); /* Green */
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-
-
-#home {
-    grid-template-columns: repeat(15, 1fr);
-    grid-auto-rows: auto;
-}
-
-
-#nameCard {
-    /*Three ways to do the same thing*/
-    grid-column-start: 1;
-    grid-column-end: 10;
-
-    font-size: 26pt;
-    float: left;
-    height: 195px;
-    margin-left: 0px;
-}
-
-#shortcuts {
-    grid-column: 10 / span 4;
-
-    padding: 20% 0% 10% 25%;
-}
-
-#links {
-    grid-column: 14/16;
-
-    padding: 5px 0 5px 5%;
-}
-
-#nameCard h6 {
-    font-size: 16pt;
-    margin-bottom: -40px;
-}
-#nameCard p{
-    font-size: 14pt;
-    padding-left: 50px;
-}
-
-
-
-/**ABOUT ME **/
-#aboutMe {
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: auto auto auto auto;
-}
-
-#aboutMe .botSpacer {
-    grid-column: 1/16;
-    grid-row: 4/5;
-}
-
-#aboutMe h1 {
-    /*start on row 2 column 1, and span 1 row and 3 columns*/
-    grid-area: 2 / 7/ span 1 / span 3;
-    font-size: 30pt;
-}
-
-#aboutMe #dp {
-    grid-area: 3 / 1 / span 1 / span 5;
-    margin: 0px 0px 0px 10%;
-    border-radius: 50%;
-}
-
-#aboutMe p {
-    grid-area: 3 / 7 / span 1 / span 8;
-    font-size: 14pt;
-    padding: 0 0 0 5%;
-}
-
-
-
-
-/**WORK EXPERIENCE**/
-#workExp {
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: auto auto auto auto auto auto;
-}
-#workExp #workExpTitle {
-    grid-area: 2 / 1 / span 1 / span 15;
-}
-    #windRiver {
-        grid-area: 3 / 2 / span 2 / span 13;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: auto auto auto ; 
-    }
-
-    #wrIcon{
-        grid-area: 1 / 1 / span 3 / span 4;
-    }
-
-    #windRiver h3 {
-        grid-area: 1 / 6 / span 1 / span 7;
-    }
-
-    #windRiver p {
-        grid-area: 2 / 7 / span 2 / span 8;
-    }
-
-
-    #cra {
-        grid-area: 5 / 2 / span 2 / span 13;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: auto auto auto ; 
-    }
-    #craIcon {
-        grid-area: 1 / 12 / span 3 / span 4;
-    }
-    #cra h3 {
-        grid-area: 1 / 2 / span 1 / span 9;
-    }
-    #cra p {
-        grid-area: 2 / 3 / span 2 / span 8;
-    }
-
-#workExp .botSpacer {
-    grid-column: 1/16;
-    grid-row: 7/8;
-}
-
-
-
-/**PASSION PROJECTS**/
-#projects {
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: auto auto auto auto auto auto;
-}
-#projects #projTitle {
-    grid-area: 2 / 1 / span 1 / span 15;
-}
-
-    #kinectGame {
-        grid-area: 3 / 2 / span 2 / span 13;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: auto auto auto 200px 200px;
-        background-image: url("icons/kinectgame.PNG") ;
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 500px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover;
-    }
-    #kinectGame h3 {
-        font-size: 30px;
-        outline-color: black;
-        grid-area: 1 / 8 / span 1 / span 9;
-    }
-    #kinectGame p {
-        grid-area: 2 / 2 / span 2 / span 6;
-    }
-    #kinectGame #kinectGameImg {
-        grid-area: 1 / 9 / span 5 / span 7;
-    }
-
-
-    #gameBot {
-        grid-area: 5 / 2 / span 2 / span 13;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: auto auto auto ;
-    }
-    #gameBot h3 {
-        grid-area: 1 / 1 / span 1 / span 6;
-    }
-    #gameBot p {
-        grid-area: 2 / 2 / span 2 / span 6;
-    }
