@@ -41,31 +41,6 @@ const Footer = () => (
             Resume
           </a>
         </Col>
-        {/*<Col className={footerStyles.link}>
-                        <a href="https://github.com/AnthonyLaiRH"
-                        >
-                            <Image src={githubIcon} className={footerStyles.icon} />
-                            Github
-                        </a>
-                    </Col>
-                    <Col style={{margin: '0 3.5vw'}}>/</Col>
-                    <Col className={footerStyles.link}>
-                        <a href="https://github.com/AnthonyLaiRH"
-                            
-                        >
-                            <Image src={resumeIcon} className={footerStyles.icon} />
-                            Resume
-                        </a>
-                    </Col>
-                    <Col style={{margin: '0 3.5vw'}}>/</Col>
-                    <Col className={footerStyles.link}>
-                        <a href="https://www.linkedin.com/in/anthony-lai-rh/"
-                            
-                        >
-                            <Image src={linkedInIcon} className={footerStyles.icon} />
-                            LinkedIn
-                        </a>
-                </Col>*/}
       </Row>
     </Container>
   </div>

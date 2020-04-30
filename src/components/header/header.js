@@ -27,21 +27,21 @@ const Header = ({ siteTitle }) => (
             </Link>
             <p style={{ margin: "0 2vw" }}>/</p>
             <Link className={headerStyles.link}
-                to="/blog/"
+                to="/notes/"
                 activeStyle={{color: 'black'}}
             >
                 Course Notes
             </Link>
             <p style={{ margin: "0 2vw" }}>/</p>
             <Link className={headerStyles.link}
-                to="/blog/"
+                to="/resume/"
                 activeStyle={{color: 'black'}}
             >
                 Resume
             </Link>
             <p style={{ margin: "0 2vw" }}>/</p>
             <Link className={headerStyles.link}
-                to="/blog/"
+                to="/404/"
                 activeStyle={{color: 'black'}}
             >
                 Contact
