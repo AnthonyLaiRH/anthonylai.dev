@@ -1,0 +1,66 @@
+@font-face { font-family: Mplus; src: url('../../../content/Mplus1p-Bold.otf'); } 
+
+.row {
+    font-family: Mplus;
+    font-size: 0.8em;
+    padding: 3vh 0vw;
+    margin: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    /*text-align: center; Changes text alignment under 580px to center rather than left*/
+    display: flex;
+    margin-top: 3.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.title {
+    margin: 2rem 0;
+    
+    display: flex;
+    color: black;
+    font-size: 4rem;
+}
+
+.link {
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link:hover {
+    color: black;
+}
+
+@media screen and (max-width: 1360px) {
+    .row{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .title {
+        font-size: 2.7rem;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .col{
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .link {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .title {
+        font-size: 2rem;   
+    }
+}
