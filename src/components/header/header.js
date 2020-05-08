@@ -1,132 +1,72 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
 
-import Typical from 'react-typical';
-import { Container, Row, Col } from 'react-bootstrap'
+import Typical from "react-typical"
+import { Container, Row, Col } from "react-bootstrap"
 
-import headerStyles from "./header.module.css";
+import headerStyles from "./header.module.css"
+import resume from "../../assets/pdf/resume-anthony-lai.pdf"
 
 const Header = ({ siteTitle }) => (
-  <div>
-      <Container fluid>
-        <Row className={headerStyles.row}>
-          <Col className={headerStyles.col}>
-            <Link className={headerStyles.link}
-                to="/"
-                activeStyle={{color: 'black'}}
-            >
-                Home
-            </Link>
-            <p style={{ margin: "0 2vw" }}>/</p>
-            <Link className={headerStyles.link}
-                to="/blog/"
-                activeStyle={{color: 'black'}}
-            >
-                Blog
-            </Link>
-            <p style={{ margin: "0 2vw" }}>/</p>
-            <Link className={headerStyles.link}
-                to="/notes/"
-                activeStyle={{color: 'black'}}
-            >
-                Course Notes
-            </Link>
-            <p style={{ margin: "0 2vw" }}>/</p>
-            <Link className={headerStyles.link}
-                to="/resume/"
-                activeStyle={{color: 'black'}}
-            >
-                Resume
-            </Link>
-            <p style={{ margin: "0 2vw" }}>/</p>
-            <Link className={headerStyles.link}
-                to="/404/"
-                activeStyle={{color: 'black'}}
-            >
-                Contact
-            </Link>
-          </Col>
-            
-          <Col className={headerStyles.title}>
-            <Typical
-              wrapper='b'
-              steps={[siteTitle + " "]} 
-            />
-          </Col>
-        </Row>
-      </Container>
-      {/*<Navbar className={headerStyles.navbar} 
-        fixed="top" bg="dark" variant="light"
-      >
+  <Container fluid className={headerStyles.container}>
+    <Row className={headerStyles.row}>
+      <Col className={headerStyles.title}>
+        <Typical wrapper="b" steps={[siteTitle + " "]} />
+      </Col>
 
-        <Nav className={headerStyles.nav}>
-          <Nav.Item>
-            <Link className={headerStyles.link}
-                to="/"
-                activeStyle={{color: 'black'}}
-            >
-                Home
-            </Link>
-          </Nav.Item>
-          <Nav.Item>/</Nav.Item>
-          <Nav.Item>
-            <Link className={headerStyles.link}
-                to="/blog/"
-                activeStyle={{color: 'black'}}
-            >
-                Blog
-            </Link>
-          </Nav.Item>
-          <Nav.Item>/</Nav.Item>
-          <Nav.Item>
-            <Link className={headerStyles.link}
-                to="/blog/"
-                activeStyle={{color: 'black'}}
-            >
-                Course Notes
-            </Link>
-          </Nav.Item>
-          <Nav.Item>/</Nav.Item>
-          <Nav.Item>
-            <Link className={headerStyles.link}
-                to="/blog/"
-                activeStyle={{color: 'black'}}
-            >
-                Resume
-            </Link>
-          </Nav.Item>
-          <Nav.Item>/</Nav.Item>
-          <Nav.Item>
-            <Link className={headerStyles.link}
-                to="/blog/"
-                activeStyle={{color: 'black'}}
-            >
-                Contact
-            </Link>
-          </Nav.Item>
-        </Nav>
+      <Col className={headerStyles.col}>
+        <Link
+          className={headerStyles.link}
+          to="/"
+         
+        >
+          Home
+        </Link>
+        
+        <Link
+          className={headerStyles.link}
+          to="/blog/"
+          activeStyle={{ color: "#407aff" }}
+        >
+          Blog
+        </Link>
+       
+        <Link
+          className={headerStyles.link}
+          to="/notes/"
+          activeStyle={{ color: "#407aff" }}
+        >
+          Course Notes
+        </Link>
+        
+        <a className={headerStyles.link} 
+          href={ resume } target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+        
+        <Link
+          className={headerStyles.link}
+          to="/404/"
+          activeStyle={{ color: "#407aff" }}
+        >
+          Contact
+        </Link>
+      </Col>
 
-        <Navbar.Brand className={headerStyles.title}>
-          <Typical
-            wrapper='b'
-            steps={[siteTitle + " "]} 
-          />
-        </Navbar.Brand>
-      </Navbar>
-          
-        */}
-  </div>
-
-
+      
+    </Row>
+  </Container>
 );
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``,
-};
+}
 
-export default Header;
+export default Header

@@ -1,0 +1,42 @@
+.container {
+    padding: 3vh 0;
+    margin: 0 9vw;
+    color: #414141;
+    display: flex;
+}
+
+.content {
+    margin: 2rem;
+    flex-basis: 0;
+    flex-grow: 1;
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+}
+
+.content h1{
+    font-size: 2rem;
+}
+.content p{
+    padding: 0 2vw;
+}
+
+@media screen and (max-width: 980px) {
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .content p{
+        padding: 0;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 475px) {
+    .content h1{
+        font-size: 1.3rem;
+    }
+}

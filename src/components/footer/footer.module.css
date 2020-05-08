@@ -1,13 +1,18 @@
-@font-face { font-family: Mplus; src: url('../../../content/Mplus1p-Bold.otf'); } 
+/*@font-face { font-family: Mplus; src: url('../../assets/fonts/Mplus1p-Bold.woff'); } */
+
+.container {
+    /*background-color: #414141;*/
+    min-width: 100%;
+}
 
 .row {
-    font-family: Mplus;
+    /*font-family: Mplus;*/
     font-size: 0.8em;
     padding: 3vh 0vw;
-    margin: 0 10vw;
+    margin: 0 7vw;
     display: flex;
     flex-wrap: wrap;
-    color: gray;
+    color: #1d1d1d;
 }
 
 .text{
@@ -22,11 +27,12 @@
 }
 
 .link{
-    color: gray;
+    margin: 0 1rem;
+    color: #1d1d1d;
 }
 
 .link:hover{
-    color: black
+    color: #FF6A5C
 }
 
 .icon {
@@ -36,14 +42,14 @@
     vertical-align: middle;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
     .row{
         display: block;
     }
-}
-
-@media screen and (max-width: 380px) {
     .text{
         text-align: center;
+    }
+    .col {
+        justify-content: center;
     }
 }

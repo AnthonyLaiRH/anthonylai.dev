@@ -1,0 +1,20 @@
+.projSection{
+    color: #414141;
+    padding: 7vh 0;
+    margin: 0 9vw;
+}
+
+.projSection h1 {
+    margin-bottom: 3vh;
+}
+
+.projects {
+    display:flex
+}
+
+@media screen and (max-width: 850px) {
+    .projects {
+        display: block;
+       
+    }
+}
