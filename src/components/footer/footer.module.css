@@ -8,7 +8,6 @@
 .row {
     /*font-family: Mplus;*/
     font-size: 0.8em;
-    padding: 3vh 0vw;
     margin: 0 7vw;
     display: flex;
     flex-wrap: wrap;
@@ -28,11 +27,6 @@
 
 .link{
     margin: 0 1rem;
-    color: #1d1d1d;
-}
-
-.link:hover{
-    color: #FF6A5C
 }
 
 .icon {
@@ -40,7 +34,12 @@
     max-height: 25px;
     margin: 0 0.5vw;
     vertical-align: middle;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.icon:hover{
+    transform: translateY(-5px);
+}
+
 
 @media screen and (max-width: 500px) {
     .row{

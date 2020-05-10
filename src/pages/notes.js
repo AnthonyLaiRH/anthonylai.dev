@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout/layout";
 
-class BlogPage extends React.Component {
+class NotesPage extends React.Component {
     render(){
 
         return(
@@ -13,4 +13,4 @@ class BlogPage extends React.Component {
     };
 };
 
-export default BlogPage
+export default NotesPage

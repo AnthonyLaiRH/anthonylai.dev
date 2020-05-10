@@ -18,7 +18,7 @@ function getLottieDimensions(){
 class Section extends Component {
     render(){
         const defaultOptions = {
-            loop: true,
+            loop: this.props.loop,
             autoplay: true, 
             animationData: this.props.animationData.default,
             rendererSettings: {
@@ -41,11 +41,13 @@ class Section extends Component {
 Section.propTypes = {
     sectionTitle: PropTypes.string,
     animationData: PropTypes.object,
+    loop: PropTypes.bool,
 }
 
 Section.defaultProps = {
     sectionTitle: ``,
-    animationData: null
+    animationData: null,
+    loop: true,
 }
 
 

@@ -49,7 +49,7 @@ const Header = ({ siteTitle }) => (
         
         <Link
           className={headerStyles.link}
-          to="/404/"
+          to="/contact/"
           activeStyle={{ color: "#407aff" }}
         >
           Contact
