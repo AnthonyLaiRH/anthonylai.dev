@@ -2,13 +2,13 @@
 .container {
     /*background-color: #414141;*/
     min-width: 100%;
-    color: #1d1d1d;
+    color: #414141;
 }
 
 .row {
     /*font-family: Mplus;*/
     font-size: 0.8em;
-    padding: 3vh 0vw;
+    padding-top: 3vh;
     margin: 0 7vw;
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,6 @@
 }
 
 .col {
-   
     /*text-align: center; Changes text alignment under 580px to center rather than left*/
     display: flex;
     margin-top: 3.4rem;
@@ -27,16 +26,19 @@
     flex-basis: 0;
     flex-grow: 1;
     margin: 2rem 0;
-    
     display: flex;
-    color: #1d1d1d/*#FF6A5C*/;
     font-size: 3rem;
 }
+.titleLink{
+    color:#414141;
+    text-decoration: none;
+}
+
 
 .link {
     margin: 0 1rem;
     text-align: center;
-    color:#1d1d1d;
+    color:#414141;
     text-decoration: none;
     font-size: 1rem;
     position: relative;

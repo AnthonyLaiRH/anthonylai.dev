@@ -7,18 +7,27 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 
-  background-color: #fafafa/*#CCDFCB*/;
+  background-color: #fafafa;
 }
 body {
   height: 100%;
-
-  /* Center and scale the image nicely
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.divider{
+  margin: 0 7vw;
+  margin-bottom: 3vh;
+  height: 5px;
+  width: 100px;
+  background-color: #414141;
+}
+
+@media screen and (max-width: 1060px) {
+  .divider{
+    margin: 3vh auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {

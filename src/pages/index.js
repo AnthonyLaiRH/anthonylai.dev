@@ -19,10 +19,10 @@ class IndexPage extends React.Component {
           I'm a third year software engineering student. I love to explore and learn
           about new technologies how they might influence the world around us.
           I like to build and tinker, best way to learn is exploration and just doing!
-          <br></br><br></br>
+          <br /><br />
           I like to play video games, in fact it was one of the reasons I was so interested
           in software early on. I enjoy watching sports and cooking a nice meal.
-          <br></br><br></br>
+          <br /><br />
           I'm always looking to learn and talk to others, so if you have any opputunities
           for me, or you would like to collaborate or get have a nice chat, feel free to contact me!
         </Section>

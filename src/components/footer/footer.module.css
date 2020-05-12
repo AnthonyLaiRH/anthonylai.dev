@@ -8,6 +8,7 @@
 .row {
     /*font-family: Mplus;*/
     font-size: 0.8em;
+    padding: 3vh 0;
     margin: 0 7vw;
     display: flex;
     flex-wrap: wrap;

@@ -12,7 +12,12 @@ const Header = ({ siteTitle }) => (
   <Container fluid className={headerStyles.container}>
     <Row className={headerStyles.row}>
       <Col className={headerStyles.title}>
-        <Typical wrapper="b" steps={[siteTitle + " "]} />
+        <Link
+          className={headerStyles.titleLink}
+          to="/">
+          <Typical wrapper="b" steps={[siteTitle + " "]} />
+        </Link>
+        
       </Col>
 
       <Col className={headerStyles.col}>
@@ -27,7 +32,6 @@ const Header = ({ siteTitle }) => (
         <Link
           className={headerStyles.link}
           to="/blog/"
-          activeStyle={{ color: "#407aff" }}
         >
           Blog
         </Link>
@@ -35,7 +39,6 @@ const Header = ({ siteTitle }) => (
         <Link
           className={headerStyles.link}
           to="/notes/"
-          activeStyle={{ color: "#407aff" }}
         >
           Course Notes
         </Link>
@@ -50,7 +53,6 @@ const Header = ({ siteTitle }) => (
         <Link
           className={headerStyles.link}
           to="/contact/"
-          activeStyle={{ color: "#407aff" }}
         >
           Contact
         </Link>
