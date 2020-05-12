@@ -23,7 +23,12 @@ class ContactPage extends React.Component {
                         >
                         <h3>Shoot me an email at </h3>
                         <a href="mailto:lai.anthony.rh@gmail.com"
-                            className={style.email}>lai.anthony.rh@gmail.com ➡️ </a> 
+                        className={style.email}>
+                            lai.anthony.rh@gmail.com  
+                            <span role="img" aria-label="point-right">
+                                {" "} ➡
+                            </span> 
+                        </a> 
                         
 
                         <h3>Or connect with me on LinkedIn! </h3>

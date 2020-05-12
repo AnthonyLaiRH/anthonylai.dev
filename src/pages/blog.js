@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <SEO />
+      <SEO title="Blog" />
       <div className={style.container}>
         <h1>Blog</h1>
         {edges.map(edge => {

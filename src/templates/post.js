@@ -2,16 +2,18 @@ import React from "react";
 import { graphql, Link } from 'gatsby';
 
 import style from "./post.module.css";
+import SEO from "../components/seo";
 import Layout from  "../components/layout/layout";
 
-const Post = ({ data, pathContext }) => {
+const Post = ({ data, pageContext }) => {
     const title = data.markdownRemark.frontmatter.title;
     const date = data.markdownRemark.frontmatter.date;
     const html = data.markdownRemark.html;
-    const { next, prev } = pathContext;
+    const { next, prev } = pageContext;
 
     return (
       <Layout>
+        <SEO title={title} />
         <div className={style.container}>
           <Link className={style.nextprevlinks}
             to="/blog/">
