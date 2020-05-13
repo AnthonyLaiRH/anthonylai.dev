@@ -2,6 +2,8 @@ import React from "react";
 
 import style from '../styles/home.module.css';
 import * as programmerAnimation from '../assets/json/programmer.json';
+import solaceIcon from '../assets/images/solace.png';
+import wrIcon from '../assets/images/windriver.png';
 
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
@@ -27,7 +29,31 @@ class IndexPage extends React.Component {
           for me, or you would like to collaborate or get have a nice chat, feel free to contact me!
         </Section>
 
-        <div className={style.projSection}>
+        <div className={style.expprj}>
+          <h1>Experience</h1>
+          <div className={style.expIcon}>
+            <img src={solaceIcon} alt="Solace"/>
+            <h3>Solace
+              <br/>
+              PubSub+ Cloud
+              <br/>
+              Full Stack Developer Intern
+            </h3>
+          </div> 
+
+          <div className={style.expIcon}>
+            <img src={wrIcon} alt="Wind River Systems"/>
+            <h3>Wind River
+              <br/>
+              Helix Virtualization Platform
+              <br/>
+              Software Engineer Intern
+            </h3>
+          </div>  
+        </div>
+
+
+        <div className={style.expprj}>
           <h1>Projects</h1>
           <div className={style.projects}>
             <Project name="anthonylai.dev" 
