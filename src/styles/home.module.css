@@ -7,6 +7,7 @@
   position: relative;
   transition: 0.3s;
   margin: 0 3vw;
+  padding: 2vh 0;
 }
 
 .expIcon img {

@@ -1,5 +1,6 @@
 import React from "react";
 
+import Typical from "react-typical"
 import style from '../styles/home.module.css';
 import * as programmerAnimation from '../assets/json/programmer.json';
 import solaceIcon from '../assets/images/solace.png';
@@ -18,15 +19,20 @@ class IndexPage extends React.Component {
         <Section sectionTitle="Me, in a nutshell" 
           animationData={programmerAnimation}
         >
-          I'm a third year software engineering student. I love to explore and learn
-          about new technologies how they might influence the world around us.
-          I like to build and tinker, best way to learn is exploration and just doing!
+          I like to do lots of diffent things, I like to hang out with friends, cook, play video games, build software, but
+          most of all I like to learn. Learn about how things work, how things are, and why. Whether that be in technology,
+          in sports, in physics, or in history and politics.
+
           <br /><br />
-          I like to play video games, in fact it was one of the reasons I was so interested
-          in software early on. I enjoy watching sports and cooking a nice meal.
+          I think it is always important to expand your world-view, I love to talk to people about new technology or different
+          cultures or current events. When I want to develop a new project, I always want to try to experiment with different
+          technologies to learn different ways of building software.
+
           <br /><br />
-          I'm always looking to learn and talk to others, so if you have any opputunities
-          for me, or you would like to collaborate or get have a nice chat, feel free to contact me!
+          So I'm Anthony Lai, a software engineering student. I like to build web and mobile applications, but I also have keen 
+          interests in software security and project management. I'm always looking for opportunities learn more, chat more and 
+          build more; if you have any opportunities for me, feel free to contact me!
+          
         </Section>
 
         <div className={style.expprj}>
