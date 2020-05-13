@@ -1,6 +1,5 @@
 import React from "react";
 
-import Typical from "react-typical"
 import style from '../styles/home.module.css';
 import * as programmerAnimation from '../assets/json/programmer.json';
 import solaceIcon from '../assets/images/solace.png';
