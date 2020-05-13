@@ -8,7 +8,7 @@ class Section extends Component {
   constructor (props){
     super(props)
     this.state = {
-      width: 0,
+      width: 500,
       lottieWidth: 0,
     };
   }
@@ -16,7 +16,6 @@ class Section extends Component {
   componentDidMount() {
     this.handleWindowSizeChange() // Set width
     window.addEventListener('resize', this.handleWindowSizeChange)
-    
   }
   
   // make sure to remove the listener
@@ -28,16 +27,14 @@ class Section extends Component {
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth })
     
-    if(this.state.width <= 500){
-      this.setState({lottieWidth: 275});
+    if(this.state.width >= 500){
+      this.setState({lottieWidth: 350});
     }
     else{
-      this.setState({lottieWidth: 350});
+      this.setState({lottieWidth: 275});
     }
   }
   
-  
-
   render(){
     const defaultOptions = {
         loop: this.props.loop,

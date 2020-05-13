@@ -10,9 +10,6 @@
     flex-basis: 0;
     flex-grow: 1;
     line-height: 1.4rem;
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;*/
 }
 
 .content h1{
