@@ -1,0 +1,26 @@
+[
+    {
+        "code": "CSI 2132",
+        "name": "Databases I",
+        "sem" : "Winter 2020",
+        "url" : "https://www.notion.so/anthonylairh/CSI-2132-Databases-1-Course-Notes-486d6355f485493b9ee7aa3b8431e26e"
+    },
+    {
+        "code": "SEG 2106",
+        "name": "Software Construction",
+        "sem" : "Winter 2020",
+        "url" : "https://www.notion.so/anthonylairh/SEG-2106-Software-Construction-Course-Notes-1cd479442c4d433ba7c41365a9fc4149"
+    },
+    {
+        "code": "CSI 2101",
+        "name": "Discrete Structures",
+        "sem" : "Winter 2020",
+        "url" : "https://www.notion.so/anthonylairh/CSI-2101-Discrete-Structures-Course-Notes-01d48ba8467748c78a88dc066ab441a3"
+    },
+    {
+        "code": "MAT 1341",
+        "name": "Introduction to Linear Algebra",
+        "sem" : "Summer 2019",
+        "url" : "https://www.notion.so/anthonylairh/MAT-1342-Intro-to-Linear-Algebra-Course-Notes-5b1b0d23e64f4f7b89c711c8fdb5d243"
+    }
+]
