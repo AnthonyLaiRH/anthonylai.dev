@@ -6,7 +6,7 @@ import Typical from "react-typical"
 import { Container, Row, Col } from "react-bootstrap"
 
 import headerStyles from "./header.module.css"
-import resume from "../../assets/pdf/resume-anthony-lai.pdf"
+import resume from "../../assets/pdf/AnthonyLai-Resume.pdf"
 
 const Header = ({ siteTitle }) => (
   <Container fluid className={headerStyles.container}>

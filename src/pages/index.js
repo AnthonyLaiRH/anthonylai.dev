@@ -2,6 +2,7 @@ import React from "react";
 
 import style from '../styles/home.module.css';
 import * as programmerAnimation from '../assets/json/programmer.json';
+import uobmsIcon from '../assets/images/uobms-blue.png';
 import solaceIcon from '../assets/images/solace.png';
 import wrIcon from '../assets/images/windriver.png';
 
@@ -37,6 +38,16 @@ class IndexPage extends React.Component {
         <div className={style.expprj}>
           <h1>Experience</h1>
           <div className={style.expIcon}>
+            <img src={uobmsIcon} alt="BioMakerSpace"/>
+            <h3>BioMakerSpace
+              <br/>
+              Software Team Lead
+              <br/>
+              Full Stack Developer
+            </h3>
+          </div> 
+
+          <div className={style.expIcon}>
             <img src={solaceIcon} alt="Solace"/>
             <h3>Solace
               <br/>
@@ -61,6 +72,16 @@ class IndexPage extends React.Component {
         <div className={style.expprj}>
           <h1>Projects</h1>
           <div className={style.projects}>
+            <Project name="biomakerspace.ca" 
+              link="https://biomakerspace.ca"
+              docs="https://www.notion.so/BioMakerSpace-1-0-Developer-Documentation-10e7231ef9b74f659badec8eb07a7a8e"
+            >
+              <h6>Firebase | Express | React | Node</h6>
+              <p>The web presence for the BioMakerSpace initiative. I handled a lot of design work,
+                as the team lead of this project,
+                in addition to development work. Please checkout the website below!
+              </p>
+            </Project>
             <Project name="anthonylai.dev" 
               url="https://github.com/AnthonyLaiRH/anthonylai.dev"
             >

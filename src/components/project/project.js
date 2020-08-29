@@ -8,10 +8,22 @@ class Project extends Component {
             <div className={style.container}>
                 <h2>{this.props.name}</h2>
                 <div>{this.props.children}</div>
-                <a className={style.link} 
+                
+                {this.props.url ? <a className={style.link} 
+                    target="_blank" rel="noopener noreferrer"
                     href={this.props.url}>
                     Codebase
-                </a>
+                </a> : ""} 
+                {this.props.link ? <a className={style.link} 
+                    target="_blank" rel="noopener noreferrer"
+                    href={this.props.link}>
+                    Website
+                </a> : ""} 
+                {this.props.docs ? <a className={style.link} 
+                    target="_blank" rel="noopener noreferrer"
+                    href={this.props.docs}>
+                    Documentation
+                </a> : ""} 
             </div>
         );
     };
