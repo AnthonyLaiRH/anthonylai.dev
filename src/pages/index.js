@@ -2,6 +2,7 @@ import React from "react";
 
 import style from '../styles/home.module.css';
 import * as programmerAnimation from '../assets/json/programmer.json';
+import bonsaiIcon from "../assets/images/bonsai.jpeg"
 import uobmsIcon from '../assets/images/uobms-blue.png';
 import solaceIcon from '../assets/images/solace.png';
 import wrIcon from '../assets/images/windriver.png';
@@ -38,12 +39,22 @@ class IndexPage extends React.Component {
         <div className={style.expprj}>
           <h1>Experience</h1>
           <div className={style.expIcon}>
+            <img src={bonsaiIcon} alt="Bonsai"/>
+            <h3>Bonsai
+              <br/>
+              Complex Store
+              <br/>
+              Software Engineer Intern
+            </h3>
+          </div> 
+
+          <div className={style.expIcon}>
             <img src={uobmsIcon} alt="BioMakerSpace"/>
             <h3>BioMakerSpace
               <br/>
-              Software Team Lead
+              biomakerspace.ca
               <br/>
-              Full Stack Developer
+              Product Manager
             </h3>
           </div> 
 
