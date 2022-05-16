@@ -1,10 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+import { Theme } from './common/theme';
+import Router from './layouts/Router';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+const App = (): JSX.Element => {
+  return (
+    <BrowserRouter basename="/">
+      <Theme>
+        <Router />
+      </Theme>
+    </BrowserRouter>
+  )
+}
+
+render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
