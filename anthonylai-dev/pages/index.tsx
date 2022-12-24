@@ -35,6 +35,9 @@ const Home: React.FC<HomeProps> = ({ page, error }) => {
             <meta name="description" content={page.meta.description} />
           </Head>
           <PageViewer page={pageOk} />
+          <aside className="h-screen sticky top-0">
+          // Fixed Sidebar
+          </aside>
         </>
       )}
       {error === 'NOKEYS' && <ErrorNoKeys />}

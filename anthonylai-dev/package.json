@@ -17,6 +17,7 @@
     "react-bricks": "3.8.1",
     "react-bricks-ui": "^0.5.2",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-slick": "^0.29.0"
   },
   "devDependencies": {
