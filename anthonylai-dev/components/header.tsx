@@ -2,7 +2,8 @@ import Link from "next/link"
 import React from "react"
 import { Instagram, Linkedin, GitHub } from "react-feather"
 
-import HamburgerMenu from "./menu/hamburgerMenu"
+import HamburgerMenu from "./topNav/hamburgerMenu"
+import HoverExpand from "./topNav/hoverExpand"
 
 const Header: React.FC = () => (
   <header className="flex items-center bg-light-bg-100 sm:h-20 py-4 border-b sm:sticky top-0 justify-between">
@@ -13,15 +14,15 @@ const Header: React.FC = () => (
       </Link>
     </div>
     <div className="flex px-14">
-      <a href="https://github.com" className="px-1">
+      <HoverExpand linkTo="https://github.com" >
         <GitHub size={20} />
-      </a>
-      <a href="https://instagram.com" className="px-1">
-        <Instagram size={20} />
-      </a>
-      <a href="https://linkedin.com" className="px-1">
-        <Linkedin size={20} />
-      </a>
+      </HoverExpand>
+      <HoverExpand linkTo="https://instagram.com">
+        <Instagram size={20}/>
+      </HoverExpand>
+      <HoverExpand linkTo="https://linkedin.com">
+        <Linkedin size={20}/>
+      </HoverExpand>
     </div>
   </header>
 )
