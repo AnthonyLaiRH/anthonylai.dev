@@ -38,26 +38,32 @@ export default function HamburgerMenu() {
         </button>
 
         <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-          {" "}
           <ul className="flex flex-col justify-between mr-24 sm:mr-72 min-h-[250px]">
-            <MenuOption linkTo={'/experience'}>Experience</MenuOption>
-            <MenuOption linkTo={'/projects'}>Projects</MenuOption>
-            <MenuOption linkTo={'/resume'}>Resume</MenuOption>
-            <MenuOption linkTo={'/blog'}>Blog</MenuOption>
-            <MenuOption linkTo={'/notes'}>Course Notes</MenuOption>
+            <MenuOption linkTo={"/experience"}>Experience</MenuOption>
+            <MenuOption linkTo={"/projects"}>Projects</MenuOption>
+            <MenuOption linkTo={"/resume"}>Resume</MenuOption>
+            <MenuOption linkTo={"/blog"}>Blog</MenuOption>
+            <MenuOption linkTo={"/notes"}>Course Notes</MenuOption>
             <li className="my-20 text-dark-main-100"></li>
-            <li className="mx-12"><p>Want to contact me?</p></li>
-            <MenuOption linkTo={'mailto:contact@anthonylai.dev'}>Email me</MenuOption>
+            <li className="mx-12">
+              <p>Want to contact me?</p>
+            </li>
+            <MenuOption linkTo={"mailto:contact@anthonylai.dev"}>
+              Email me
+            </MenuOption>
           </ul>
         </div>
       </nav>
       <style>{`
       .hideMenuNav {
-        display: none;
+        opacity: 0;
+        position: absolute;
       }
       .showMenuNav {
-        display: block;
         position: absolute;
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+
         width: 100%;
         height: 100vh;
         top: 0;
